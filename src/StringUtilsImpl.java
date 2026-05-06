@@ -32,7 +32,7 @@ public class StringUtilsImpl implements StringUtils {
     public int countVowels(String input) {
         String criteria = "aeiouAEIOU";
         int counter = 0;
-        for(int i = 0; i < input.length(); i++){
+        for(int i = 1; i < input.length(); i++){
             char boii = input.charAt(i);
             String compare = "" + boii;
             if (containsSubstring(criteria, compare)){
